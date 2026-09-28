@@ -1,6 +1,17 @@
-/* body{
-    background-color:aqua;
-} */
+  /* styling of new and index page */
+  
+  
+  body{
+     font-family: "Plus Jakarta Sans", sans-serif !important;
+     display:flex !important;
+     flex-direction:column !important;
+     min-height:100vh !important;
+}
+footer{
+    margin-top:auto;
+}
+
+
 
 .navbar{
     height:5rem;
@@ -50,14 +61,27 @@
 .card{
     border:none !important;
     margin-bottom: 2 rem;
+   
+    
 
+}
+.row{
+    width:(calc(100%,-4rem));
+    margin-left:1rem !important;
+    margin-right:2 rem !important;
+    margin-bottom:2 rem !important;
 }
 
 .card-img-top{
     border-radius:1rem !important;
     width:100% !important;
     object-fit:cover !important;
+
 }
+/* .card-img-top:hover{
+    transform:scale(1.05)!important;
+    box-shadow:0 10px 25px rgba(0,0,0,3);
+} */
 
 .card-body{
     padding:0;
@@ -67,4 +91,91 @@
     font-weight:400
 }
 
+.mainheading{
+    margin-left:2rem;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-weight:500;
+    
+}
 
+.listing-link{
+    text-decoration:none;
+}
+
+.card-img-overlay{
+    opacity:0;
+}
+
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color:white;
+}
+
+
+.addnewlisting{
+    margin-left:3rem;
+    margin-right:3rem;
+    margin-top:1rem;
+}
+
+.inner-row {
+    margin-left:0 !important;
+}
+
+.row .col-md-4{
+    padding-left:0 !important;
+}
+
+.newbtn{
+    background-color:#fe424d !important;
+    border:none !important;
+    width:auto !important;
+}
+
+
+/* styling of edit page */
+
+.editformnewrow{
+    margin-left:0 !important;
+}
+
+/* .editformnewrow .col-md-4{
+    padding:0 !important;
+} */
+
+.mb-3{
+    padding:0 !important;
+}
+
+/* show page  */
+
+.show-img{
+    height:30vh;
+}
+.show-card-body{
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.edit-in-show{
+    text-decoration:none;
+    color:white;
+}
+
+.edit-page-button{
+    background-color:#fe424d !important;
+    border:none !important;
+    height:40px;
+    margin-right:10px;
+
+}
+
+.del-btn{
+    background-color:black !important;
+    height:40px;
+    margin-right:10px;
+}
+
+.edit-del-btn{
+    height:45px !important;
+}
