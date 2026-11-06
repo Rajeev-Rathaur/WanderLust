@@ -10,13 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/rating.css">
   </head>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.js"></script>
+
 <body class="d-flex flex-column min-vh-100">
 
     <!-- <h1>This is my  travel website</h1> -->
      <%- include("../includes/navbar.ejs") -%>
 
    <div class="container flex-grow-1">
+    <%- include("../includes/flash.ejs") -%>
         <%- body -%>
    </div>
      <%- include("../includes/footer.ejs") -%>

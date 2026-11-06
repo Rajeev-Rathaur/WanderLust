@@ -1,22 +1,75 @@
+
+<style>
+  .btn-outline-success{
+    background-color:#fe424d;
+    color:#fff;
+    border-radius:25px;
+    padding:0 1rem 0 1rem;
+  }
+  .btn-outline-success:hover{
+    background-color:#fe424d;
+    color:#fff;
+  }
+  .btn-outline-success:focus{
+    background-color:#fe424d !important;
+    color:#fff;
+  }
+  .btn-outline-success i{
+    display:inline;
+    margin-right:0.5rem;
+  }
+  .searchbtn{
+    border-radius:25px;
+    padding:0.5rem 3rem 0.5rem 3rem;
+    font-size:1rem;
+  }
+</style>
+
+
+
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/" ><i class="fa-regular fa-compass"></i></a>
+    <a class="navbar-brand" href="/listings" ><i class="fa-regular fa-compass"></i></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Home</a>
+          <a class="nav-link" href="/listings">Explore</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/listings">All listings</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/listings/new">Add new listing</a>
-        </li>
-       
+
       </ul>
     </div>
+
+    <div class="navbar-nav">
+        <form class="d-flex" role="search">
+        <input class="form-control me-2 searchbtn" type="search" placeholder="Search destinations" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+      </form>
+    </div>
+
+
+    
+         <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        </li>
+        <% if(!currUser) { %>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/signup"><b>Sign up</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login"><b>log in</b></a>
+        </li>
+        <% } %>
+        <% if(currUser) { %>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout"><b>log out</b></a>
+        </li>
+        <% } %>
+        </ul>
+        </div>
   </div>
 </nav>

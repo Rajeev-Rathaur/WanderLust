@@ -6,6 +6,7 @@
      display:flex !important;
      flex-direction:column !important;
      min-height:100vh !important;
+   
 }
 footer{
     margin-top:auto;
@@ -58,14 +59,14 @@ footer{
     align-content:space-evenly;
 }
 /* Cards */
-.card{
+.listing-cards{
     border:none !important;
     margin-bottom: 2 rem;
    
     
 
 }
-.row{
+.roww{
     width:(calc(100%,-4rem));
     margin-left:1rem !important;
     margin-right:2 rem !important;
@@ -179,3 +180,14 @@ footer{
 .edit-del-btn{
     height:45px !important;
 }
+
+/* maps*/
+
+body { 
+    margin: 0;
+    padding: 0;
+ }
+#map {
+     height:400px;
+     width:700px;
+    }
