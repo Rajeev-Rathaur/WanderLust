@@ -18,6 +18,11 @@ const flash=require("connect-flash");
 const passport=require("passport");
 const LocalStrategy=require("passport-local");
 const user=require("./models/user.js");
+// const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
+
+// const geocodingClient = mbxGeocoding({
+//     accessToken: process.env.MAP_TOKEN
+// });
 
 
 
