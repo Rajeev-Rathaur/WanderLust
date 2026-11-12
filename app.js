@@ -110,6 +110,10 @@ passport.deserializeUser(user.deserializeUser());
 
 //......................................................
 
+// app.use("/listings",listingRouter);
+// app.use("/listings/:id/reviews",reviewRouter);
+// app.use("/",userRouter);
+
 
 app.use((req,res,next)=>{
     res.locals.success=req.flash("success");
